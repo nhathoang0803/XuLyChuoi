@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate email</title>
+</head>
+<body>
+    <script>
+        function is_Email(str) {
+            email = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+            if (email.test(str)) {
+                return true;
+            }else {
+                return false;
+            }
+        }
+        var eml = "a@gmail.com";
+        console.log(is_Email(eml));
+        var eml = "ab@yahoo.com";
+        console.log(is_Email(eml));
+        var eml = "ab@gmail.";
+        console.log(is_Email(eml));
+        var eml = "@#abc@gmail.com";
+        console.log(is_Email(eml));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate của lớp học</title>
+</head>
+<body>
+    <script>
+        function is_Class(str) {
+            classy = /^[CAP]([0-9]){4}[GHIKLM]$/;
+            if (classy.test(str)) {
+                return true;
+            }else {
+                return false;
+            }
+        }
+        var cl = "_abc123";
+        alert(is_Class(cl));
+        cl = "C0119G";
+        alert(is_Class(cl));
+        cl = "123abc_";
+        alert(is_Class(cl));
+    </script>
+</body>
+</html>

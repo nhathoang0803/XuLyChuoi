@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>     
+<body>
+    <script>
+        function is_DayMonthYear(str) {
+            mon = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+            if (mon.test(str)) {
+                return true;
+            }else {
+                return false;
+            }
+        }
+        var dayMY = "20/4/1998";
+        alert(is_DayMonthYear(dayMY));
+        var dayMy = "a/4/1544";
+        alert(is_DayMonthYear(dayMY));
+    </script>
+</body>
+</html>

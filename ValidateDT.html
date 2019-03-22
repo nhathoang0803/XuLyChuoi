@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Số điện thoại</title>
+</head>
+<body>
+    <script !src="">
+        function is_PhoneNumber(str) {
+            phoneNum = /^[(0-9)-]{5}[(0-9)]{12}$/;
+            if (phoneNum.test(str)) {
+                return true;
+            }
+            else return false;
+        }
+        let pN = "(84)-(0978489648)";
+        alert(is_PhoneNumber(pN));
+        pN = "(a8)-(22222222)";
+        alert(is_PhoneNumber(pN));
+    </script>
+</body>
+</html>

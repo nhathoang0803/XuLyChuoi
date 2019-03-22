@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate account</title>
+</head>
+<body>
+    <script>
+        function is_account(str) {
+            account = /^[_a-z0-9]{6,}$/;
+            if (account.test(str)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var acc = "123abc_";
+        alert(is_account(acc));
+        var acc = "_abc123";
+        alert(is_account(acc));
+        var acc = "1234_";
+        alert(is_account(acc));
+    </script>
+</body>
+</html>
